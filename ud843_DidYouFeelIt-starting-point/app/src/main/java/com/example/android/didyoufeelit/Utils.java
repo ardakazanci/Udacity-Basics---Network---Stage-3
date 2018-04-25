@@ -32,8 +32,7 @@ import java.net.URL;
 import java.nio.charset.Charset;
 
 /**
- * Utility class with methods to help perform the HTTP request and
- * parse the response.
+ *
  */
 public final class Utils {
 
@@ -56,7 +55,7 @@ public final class Utils {
         }
 
         // Extract relevant fields from the JSON response and create an {@link Event} object
-        Event earthquake = extractFeatureFromJson(jsonResponse);
+        Event earthquake = extractFeatureFromJson(jsonResponse); // Nesne oluşturuyor.
 
         // Return the {@link Event}
         return earthquake;
